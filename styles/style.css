@@ -1,8 +1,12 @@
+:root {
+    --black-color: black;
+}
 * {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+/*   Header styles */
 header {
     background-color:  #B9C2CC;
     display: flex;
@@ -29,7 +33,7 @@ header nav ul {
 }
 header nav ul a {
     margin-right: 60px;
-    color: black;
+    color: var(--black-color);
 }
 header nav ul li {
     display: inline;
@@ -38,9 +42,20 @@ header nav a {
     text-decoration: none;
 }
 header nav a:hover {
-    background-color: black;
+    background-color: var(--black-color);
     color: white;
 }
-.underline {
-    border-bottom: 3px solid black;
+.black-underline {
+    border-bottom: 3px solid var(--black-color);
 }
+/*  hero syles */
+.avatar {
+    text-align: center;
+    padding-top: 50px;
+    background-image: url(./images/wall-background.jpg);
+    height: 300px;
+}
+.avatar-img {
+    border: 2px solid var(--black-color);
+}
+/* About Me Styles */ 
