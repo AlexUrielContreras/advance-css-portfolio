@@ -51,11 +51,31 @@ header nav a:hover {
 /*  hero syles */
 .avatar {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 25px;
     background-image: url(./images/wall-background.jpg);
-    height: 300px;
+    height: 250px;
 }
 .avatar-img {
     border: 2px solid var(--black-color);
 }
 /* About Me Styles */ 
+.about {
+    display: flex;
+    margin: 50px 0 0 200px;
+
+}
+.about-para {
+    width: 75vw;
+}
+.about-para p {
+    font-size: .99vw;
+    margin-left: 75px;
+}
+
+/*  dynamic class */
+.subtitle {
+    font-size: 1.55vw;
+    width: 150px;
+    height: 150px;
+    border-right: 7px solid black;
+}
