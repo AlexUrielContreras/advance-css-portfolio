@@ -71,6 +71,57 @@ header nav a:hover {
     font-size: .99vw;
     margin-left: 75px;
 }
+/* Skills styles */
+.skill {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0 0 200px;
+    flex: 1 1 0;
+}
+.skill-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 75px;
+
+}
+.surf-card {
+    background-image: url(./images/surf.jpg);
+    background-position: center;
+    background-size: cover;
+
+    height: 300px;
+    width: 900px;
+}
+.calc-card {
+    background-image: url(./images/pexels-rodnae-productions-5915147.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 900px;
+}
+.password-card {
+    background-image: url(./images/pexels-nao-triponez-792199.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 900px;
+}
+
+/* Contact styles */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.contact-cards {
+    display: flex;
+    align-items: center;
+}
+
+
+
 
 /*  dynamic class */
 .subtitle {
@@ -78,4 +129,8 @@ header nav a:hover {
     width: 150px;
     height: 150px;
     border-right: 7px solid black;
+}
+
+.skill-border {
+    border: 2px solid black;
 }
