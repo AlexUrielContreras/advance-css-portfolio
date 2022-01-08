@@ -12,7 +12,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 100px;
+    height: 10vh;
 }
 header div {
     width: 25vw;
@@ -61,7 +61,8 @@ header nav a:hover {
 /* About Me Styles */ 
 .about {
     display: flex;
-    margin: 50px 0 0 200px;
+    justify-content: space-evenly;
+    padding-top: 5vw;
 
 }
 .about-para {
@@ -74,9 +75,10 @@ header nav a:hover {
 /* Skills styles */
 .skill {
     display: flex;
-    flex-wrap: wrap;
-    margin: 50px 0 0 200px;
-    flex: 1 1 0;
+    justify-content: space-evenly;
+    padding-top: 5vw;
+
+    
 }
 .skill-cards {
     display: flex;
@@ -92,21 +94,21 @@ header nav a:hover {
     background-size: cover;
 
     height: 300px;
-    width: 900px;
+    width: 50vw;
 }
 .calc-card {
     background-image: url(./images/pexels-rodnae-productions-5915147.jpg);
     background-position: center;
     background-size: cover;
     height: 300px;
-    width: 900px;
+    width: 50vw;
 }
 .password-card {
     background-image: url(./images/pexels-nao-triponez-792199.jpg);
     background-position: center;
     background-size: cover;
     height: 300px;
-    width: 900px;
+    width: 50vw;
 }
 
 /* Contact styles */
@@ -114,11 +116,14 @@ footer {
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
-}
-.contact-cards {
-    display: flex;
     align-items: center;
+    margin: 50px 0 0 200px;
 }
+.contact-icons li {
+    display: inline;
+  
+}
+
 
 
 
@@ -134,3 +139,6 @@ footer {
 .skill-border {
     border: 2px solid black;
 }
+ ul {
+    list-style: none;
+ }
