@@ -33,7 +33,13 @@ header nav ul li a {
     padding: 10px 15px;
     font-size: 1.4vw;
     color: black;
+    border-bottom: 5px solid black;
 }
+header nav ul li a:hover {
+    color: white;
+    background-color: black;
+}
+
 /* Avatar styles */
 .avatar {
     background-image: url(./images/wall-background.jpg);
@@ -48,24 +54,24 @@ header nav ul li a {
     margin-top: 50px;
 }
 .subtitle {
-    margin: 30px auto;
+    margin: 30px auto 70px auto;
     font-size: 1.5vw;
-    border-bottom: 2px solid black;
+    border-bottom: 4px solid black;
     width: 300px;
     text-align: center;
 }
 .about-para {
     max-width: 1000px;
     text-align: center;
-    margin: 0 auto;
-    font-size: 1vw;
+    margin: 0 auto 100px auto; 
+    font-size: 16px;
 }
 
 /* Skills Styles */
 .skill-cards {
     display: flex;
     justify-content: space-around;
-    
+    margin-bottom: 150px;
     
 }
 .skill-box {
@@ -129,6 +135,23 @@ main {
 
 
 /* media quierys */
+@media screen and (max-width: 1000px) {
+    header{
+        justify-content: center;
+    }
+    header h1 {
+        font-size: 30px;
+    }
+    header nav ul li a {
+        font-size: 25px;
+        font-weight: 500;
+        border: none;
+    }
+    .subtitle {
+        font-size: 20px;
+    }
+    
+}
 
 
 
@@ -141,9 +164,7 @@ main {
 
 
 
-
-
-@media screen and (max-width: 585px){
+@media screen and (max-width: 500px){
     header {
         justify-content: center;
     }
@@ -152,13 +173,12 @@ main {
     }
     header nav ul li a {
         font-size: 15px;
+        border: none;
+        font-weight: 600;
     }
     .subtitle {
         font-size: 20px;
         width: 100vw;
-    }
-    .about-para {
-        font-size: 16px;
     }
     .skill-cards {
         flex-direction: column;
