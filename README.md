@@ -10,4 +10,3 @@ CSS
 # Website 
 https://alexurielcontreras.github.io/advance-css-portfolio/
 
-# ScreenShots
