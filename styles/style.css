@@ -1,144 +1,138 @@
-:root {
-    --black-color: black;
-}
 * {
-    margin: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-/*   Header styles */
+/* Header Styles */
+
 header {
-    background-color:  #B9C2CC;
     display: flex;
     flex-wrap: wrap;
+    background-color: lightblue;
+    height: 100px;
     justify-content: space-between;
-    height: 10vh;
+    align-items: center;
 }
-header div {
-    width: 25vw;
-    background-color: #63c5da;
-    text-align: center;
-    margin: 10px 0;
-}
-header div h1 {
-    padding-top: 20px;
+header h1 {
     font-size: 2vw;
+    padding-left: 30px;
 }
 header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 30px 10px 0 0;
-    font-size: 1.55vw;
-}
-header nav ul a {
-    margin-right: 60px;
-    color: var(--black-color);
+    justify-content: center;
+    align-items: center;
+    list-style: none;
 }
 header nav ul li {
     display: inline;
+    padding-right: 20px;
 }
-header nav a {
-    text-decoration: none;
+header nav ul li a {
+    padding: 10px 15px;
+    font-size: 1.4vw;
+    color: black;
 }
-header nav a:hover {
-    background-color: var(--black-color);
-    color: white;
-}
-.black-underline {
-    border-bottom: 3px solid var(--black-color);
-}
-/*  hero syles */
+/* Avatar styles */
 .avatar {
-    text-align: center;
-    padding-top: 25px;
     background-image: url(./images/wall-background.jpg);
     height: 250px;
+    text-align: center;
 }
 .avatar-img {
-    border: 2px solid var(--black-color);
+    padding-top: 25px;
 }
-/* About Me Styles */ 
+/* About Me Styles */
 .about {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 5vw;
-
+    margin-top: 50px;
+}
+.subtitle {
+    margin: 30px auto;
+    font-size: 1.5vw;
+    border-bottom: 2px solid black;
+    width: 300px;
+    text-align: center;
 }
 .about-para {
-    width: 75vw;
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1vw;
 }
-.about-para p {
-    font-size: .99vw;
-    margin-left: 75px;
-}
-/* Skills styles */
-.skill {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 5vw;
 
-    
-}
+/* Skills Styles */
 .skill-cards {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 75px;
+    justify-content: space-around;
+}
+.skill-box {
+    height: 250px;
+    width: 400px;
+    background-color: black;
+    border: 2px dotted red;
 
 }
-.surf-card {
-    background-image: url(./images/surf.jpg);
-    background-position: center;
-    background-size: cover;
-
-    height: 300px;
-    width: 50vw;
-}
-.calc-card {
-    background-image: url(./images/pexels-rodnae-productions-5915147.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 300px;
-    width: 50vw;
-}
-.password-card {
-    background-image: url(./images/pexels-nao-triponez-792199.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 300px;
-    width: 50vw;
-}
-
-/* Contact styles */
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    align-items: center;
-    margin: 50px 0 0 200px;
-}
-.contact-icons li {
-    display: inline;
-  
+.run-buddy {
+ 
 }
 
 
 
 
 
-/*  dynamic class */
-.subtitle {
-    font-size: 1.55vw;
-    width: 150px;
-    height: 150px;
-    border-right: 7px solid black;
-}
 
-.skill-border {
-    border: 2px solid black;
-}
- ul {
+
+
+
+
+/* Dynamic styles */
+
+ul {
     list-style: none;
- }
+}
+a {
+    text-decoration: none;
+}
+main {
+    background-color: #f4f1e8;
+}
+
+
+/* media quierys */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 585px){
+    header {
+        justify-content: center;
+    }
+    header h1 {    
+        font-size: 30px;
+    }
+    header nav ul li a {
+        font-size: 15px;
+    }
+    .subtitle {
+        font-size: 20px;
+        width: 100vw;
+    }
+    .about-para {
+        font-size: 16px;
+    }
+    .skill-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
